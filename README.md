@@ -41,9 +41,9 @@ cd Reinforcement_Learning
 
 2.Install used libraries in the project
 
-### Running the Application
+### Running the Project
 
-Launch the application:
+To evaluate the performance of both the Optimal and Non-Optimal Agents, you can use the included checker that works on the given inputs.
 ```bash
 python check.py
 ```
