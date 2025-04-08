@@ -3,7 +3,7 @@ import math
 from collections import defaultdict
 from itertools import product
 
-ids = ["213780455", "214029415"]
+ids = ["111111111", "222222222"]
 
 
 DESTROY_HORCRUX_REWARD = 2
