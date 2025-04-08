@@ -11,30 +11,19 @@ This project implements two types of agents using reinforcement learning algorit
 
 1. **Optimal Agent**: Designed for smaller state spaces, this agent aims to act optimally to achieve the highest possible reward by maximizing efficiency in decision-making.
 
-2. **Non-Optimal Agent**: Suited for larger state spaces, this agent utilizes Q-learning to accumulate the greatest number of points possible. It is engineered to consistently achieve a positive overall reward, even in complex scenarios.
+2. **Non-Optimal Agent**: Suited for larger state spaces, this agent utilizes Q-learning to accumulate the greatest number of points (rewards) possible. It is built to consistently achieve a positive overall reward, even in complex scenarios.
 
 These implementations demonstrate the adaptability and scalability of reinforcement learning techniques across different environmental complexities.
 
 ## 🌟 Key Features
+- **Optimal Agent**:
+  - **State Space Representation**: The state space for the Optimal Agent is explicitly defined to facilitate precise decision-making.
+  - **Value Iteration**: Utilizes value iteration to determine the optimal policy, ensuring the agent acts in a way that maximizes the reward in smaller state spaces.
 
-### Intelligent Property Matching
-- **Natural Language Understanding**: Simply describe your dream home in plain English
-- **Semantic Search Engine**: Powered by Qdrant for intelligent property matching
-- **Personalized Recommendations**: Tailored suggestions based on your unique preferences
-- **Dynamic Property Descriptions**: AI-generated, engaging property descriptions that highlight relevant features
+- **Non-Optimal Agent**:
+  - **Feature-Based State Representation**: Instead of a full state representation, this agent uses a feature-based approach to efficiently manage larger state spaces.
+  - **Q-Learning**: Employs Q-learning, a form of reinforcement learning that allows the agent to learn the value of an action in a particular state. This approach helps the agent learn to accumulate points effectively and consistently achieve positive rewards.
 
-### Advanced Technology Stack
-- **LangChain Integration**: Seamless combination of language models and document retrieval
-- **Vector Database**: Qdrant for efficient similarity search and property matching
-- **GPT-4o Language Model**: State-of-the-art natural language processing
-
-### Data Management
-- **Data Source**: Houses that were sold in California in 2020. 
-- **Structured Property Information**: Comprehensive property details including:
-  - Property specifications (size, bedrooms, bathrooms)
-  - Amenities (schools, schools score)
-  - Price points
-  - Property descriptions
  
 
 ## 🚀 Getting Started
