@@ -13,7 +13,7 @@ This project implements two types of agents using reinforcement learning algorit
 
 2. **Non-Optimal Agent**: Suited for larger state spaces, this agent utilizes Q-learning to accumulate the greatest number of points (rewards) possible. It is built to consistently achieve a positive overall reward, even in complex scenarios.
 
-These implementations demonstrate the adaptability and scalability of reinforcement learning techniques across different environmental complexities.
+These implementations demonstrate the adaptability and scalability of reinforcement learning techniques across different environmental complexities and in limited runtime.
 
 ## 🌟 Key Features
 - **Optimal Agent**:
@@ -30,93 +30,20 @@ These implementations demonstrate the adaptability and scalability of reinforcem
 
 ### Prerequisites
 - Python 3.11 
-- OpenAI API key
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/samarsamara/RealEstateAI.git
-cd RealEstateAI
+git clone https://github.com/Rawanbad/Reinforcement_Learning.git
+cd Reinforcement_Learning
 ```
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Create ".env" file that contains your OpenAI API key:
-   ```
-   API_KEY=<your_api_key>
-   ``` 
+2.Install used libraries in the project
 
 ### Running the Application
 
 Launch the application:
 ```bash
-python RealEstateAI.py
+python check.py
 ```
-
-## 📦 Project Structure
-```
-RealEstateAI/
-│── examples/
-│   ├── example1.txt
-│   ├── example2.txt
-│   ├── example3.txt
-│   └── example4.txt
-├── Data/
-│   └── los_angeles.csv
-├── Code/
-│   ├── RealEstateAI.py      # Main application script
-│   ├── create_VDBs.py       # create the vector data base
-│   ├── create_embeddings.py       # create the embedding for each data raw
-│   ├── exploring_agent.py      # Agentic RAG
-│   ├── interacting_agent.py    # conversation manager 
-│   └── recommendation_agent.py       # return the final recommendation for the user
-├── requirements.txt          # Project dependencies
-└── README.md                # Project documentation
-```
-
-## 💻 Technical Details
-
-### Dependencies
-```
-qdrant-client
-tiktoken
-numpy
-pandas
-torch
-transformers
-faiss-cpu
-sentence-transformers
-tqdm
-langchain_openai
-json
-os
-langchain
-
-```
-
-
-
-## 🎯 Example Usage
-
-1. Start the application.
-2. Enter your preferences in natural language:
-   - "I'm looking for a 3-bedroom house in Beverly Hills with budget 1m"
-   - "I want a condo with 2-bedroom and one bathroom apartment in los angeles with a budget of $500K"
-3. View personalized recommendations with property descriptions.
-
-
-
-## App Architecture:
-
-![Alt Text](https://github.com/samarsamara/RealEstateAI/blob/main/Image20250308195141.jpg)
-
-
-
-## Notes :
-1. Our AI agent exclusively **searches for properties in Los Angeles**, requiring users to input their **budget, number of bedrooms, and number of bathrooms** as mandatory criteria.
-2. Link for the embedded data : https://drive.google.com/drive/folders/1bsPUZ-zUZCfAebIkm2s_D-fPxOXQSVx9?usp=sharing.
-   
